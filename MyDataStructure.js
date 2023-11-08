@@ -1,25 +1,23 @@
 class MyDataStructure {
-
   constructor() {
     this.data = [];
   }
 
   add(element) {
-    // Add your solution here!
+    this.data.push(element);
   }
 
-  remove() {
-    // Add your solution here!
+  remove(element) {
+    this.data.splice(this.data.indexOf(element), 1);
   }
 
   isEmpty() {
-    // Add your solution here!
+    if (!this.data.length) return true;
   }
 
   length() {
-    // Add your solution here!
+    return this.data.length;
   }
-
 }
 
 module.exports = MyDataStructure;
